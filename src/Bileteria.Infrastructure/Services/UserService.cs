@@ -12,6 +12,7 @@ namespace Bileteria.Infrastructure.Services
         {
             _userRepository = userRepository;
         }
+
         public async Task RegisterAsync(Guid userId, string email, string name, string password, string role = "user")
         {
             var user = await _userRepository.GetAsync(email);
@@ -21,6 +22,18 @@ namespace Bileteria.Infrastructure.Services
             }
             user = new User(userId, role, name, email, password);
             await _userRepository.AddAsync(user);
+        }
+        public async Task LoginAsync(string email, string password)
+        {
+            var user = await _userRepository.GetAsync(email);
+            if(user == null)
+            {
+                throw new Exception("Invalid credentials.");
+            }
+            if(user.Password != password)
+            {
+                throw new Exception("Invalid credentials.");
+            }
         }
     }
 }
