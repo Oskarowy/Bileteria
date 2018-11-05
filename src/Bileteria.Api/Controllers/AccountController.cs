@@ -37,8 +37,6 @@ namespace Bileteria.Api.Controllers
 
         [HttpPost("login")]
         public async Task<IActionResult> Post(Login command)
-        {
-            throw new NotImplementedException();
-        }
+            => Json(await _userService.LoginAsync(command.Email, command.Password));
     }
 }
