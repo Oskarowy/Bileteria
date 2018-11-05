@@ -2,12 +2,13 @@ using System;
 using System.Threading.Tasks;
 using Bileteria.Infrastructure.Commands.Users;
 using Bileteria.Infrastructure.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bileteria.Api.Controllers
 {
     [Route("[controller]")]
-    public class AccountController : Controller
+    public class AccountController : ApiControllerBase
     {
         private IUserService _userService;
         public AccountController(IUserService userService)
@@ -15,10 +16,9 @@ namespace Bileteria.Api.Controllers
             _userService = userService;
         }
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Get()
-        {
-            throw new NotImplementedException();
-        }
+            => Json(await _userService.GetAccountAsync(UserId));
 
         [HttpGet("tickets")]
         public async Task<IActionResult> GetTickets()

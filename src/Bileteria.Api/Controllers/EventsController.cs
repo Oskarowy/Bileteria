@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Bileteria.Api.Controllers
 {
     [Route("[controller]")]
-    public class EventsController : Controller
+    public class EventsController : ApiControllerBase
     {
         private readonly IEventService _eventService;
         public EventsController(IEventService eventService)

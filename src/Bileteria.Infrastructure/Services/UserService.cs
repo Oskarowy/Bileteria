@@ -1,8 +1,10 @@
 using System;
 using System.Threading.Tasks;
+using AutoMapper;
 using Bileteria.Core.Domain;
 using Bileteria.Core.Repositories;
 using Bileteria.Infrastructure.DTO;
+using Bileteria.Infrastructure.Extensions;
 
 namespace Bileteria.Infrastructure.Services
 {
@@ -10,12 +12,20 @@ namespace Bileteria.Infrastructure.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtHandler _jwtHandler;
-        public UserService(IUserRepository userRepository, IJwtHandler jwtHandler)
+        private readonly IMapper _mapper;
+        public UserService(IUserRepository userRepository, IJwtHandler jwtHandler, IMapper mapper)
         {
             _userRepository = userRepository;
             _jwtHandler = jwtHandler;
+            _mapper = mapper;
         }
 
+        public async Task<AccountDto> GetAccountAsync(Guid userId)
+        {
+            var user = await _userRepository.GetOrFailAsync(userId);
+
+            return _mapper.Map<AccountDto>(user);
+        }
         public async Task RegisterAsync(Guid userId, string email, string name, string password, string role = "user")
         {
             var user = await _userRepository.GetAsync(email);
@@ -46,5 +56,6 @@ namespace Bileteria.Infrastructure.Services
                 Role = user.Role
             };
         }
+
     }
 }
