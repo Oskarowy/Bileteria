@@ -35,6 +35,7 @@ namespace Bileteria.Api
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IEventRepository, EventRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEventService, EventService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
         }
