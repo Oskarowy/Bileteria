@@ -28,6 +28,7 @@ namespace Bileteria.Api.Controllers
             command.EventId = Guid.NewGuid();
             await _eventService.CreateAsync(command.EventId, command.Name, 
                 command.Description, command.StartDate, command.EndDate);
+            await _eventService.AddTicketsAsync(command.EventId, command.Tickets, command.Price);
             
             return Created($"/events/{command.EventId}", null);
         }

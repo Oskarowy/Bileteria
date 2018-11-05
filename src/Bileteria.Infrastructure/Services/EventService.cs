@@ -52,7 +52,13 @@ namespace Bileteria.Infrastructure.Services
         }
         public async Task AddTicketsAsync(Guid eventId, int amount, decimal price)
         {
-            throw new NotImplementedException();
+            var @event = await _eventRepository.GetAsync(eventId);
+            if(@event == null)
+            {
+                throw new Exception($"Event with id: '{eventId}' does not exists.");
+            }
+            @event.AddTickets(amount, price);
+            await _eventRepository.UpdateAsync(@event);
         }
 
         public async Task UpdateAsync(Guid id, string name, string description)
