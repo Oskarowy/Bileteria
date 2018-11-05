@@ -32,5 +32,13 @@ namespace Bileteria.Api.Controllers
             
             return Created($"/events/{command.EventId}", null);
         }
+
+        [HttpPut("{eventId}")]
+        public async Task<IActionResult> Put(Guid eventId, [FromBody]UpdateEvent command)
+        {
+            await _eventService.UpdateAsync(eventId, command.Name, command.Description);
+            
+            return NoContent();
+        }
     }
 }
