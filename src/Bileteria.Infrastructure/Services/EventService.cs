@@ -6,6 +6,7 @@ using AutoMapper;
 using Bileteria.Core.Domain;
 using Bileteria.Core.Repositories;
 using Bileteria.Infrastructure.DTO;
+using Bileteria.Infrastructure.Extensions;
 
 namespace Bileteria.Infrastructure.Services
 {
@@ -52,22 +53,14 @@ namespace Bileteria.Infrastructure.Services
         }
         public async Task AddTicketsAsync(Guid eventId, int amount, decimal price)
         {
-            var @event = await _eventRepository.GetAsync(eventId);
-            if(@event == null)
-            {
-                throw new Exception($"Event with id: '{eventId}' does not exists.");
-            }
+            var @event = await _eventRepository.GetOrFailAsync(eventId);
             @event.AddTickets(amount, price);
             await _eventRepository.UpdateAsync(@event);
         }
 
         public async Task UpdateAsync(Guid id, string name, string description)
         {
-            var @event = await _eventRepository.GetAsync(id);
-            if(@event == null)
-            {
-                throw new Exception($"Event with id: '{id}' does not exists.");
-            }
+            var @event = await _eventRepository.GetOrFailAsync(id);
             @event = await _eventRepository.GetAsync(name);
             if(@event != null)
             {
