@@ -1,0 +1,12 @@
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/bin/Debug/netstandard2.0/Bileteria.Infrastructure.deps.json
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/bin/Debug/netstandard2.0/Bileteria.Infrastructure.dll
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/bin/Debug/netstandard2.0/Bileteria.Infrastructure.pdb
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/bin/Debug/netstandard2.0/Bileteria.Core.dll
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/bin/Debug/netstandard2.0/Bileteria.Core.pdb
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.csprojAssemblyReference.cache
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.AssemblyInfoInputs.cache
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.AssemblyInfo.cs
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.csproj.CopyComplete
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.dll
+/Users/oskarbialek/Programowanie/Bileteria/src/Bileteria.Infrastructure/obj/Debug/netstandard2.0/Bileteria.Infrastructure.pdb
