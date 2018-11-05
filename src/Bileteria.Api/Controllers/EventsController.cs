@@ -22,6 +22,15 @@ namespace Bileteria.Api.Controllers
             return Json(events);
         }
 
+        [HttpGet("{eventId}")]
+        public async Task<IActionResult> Get(Guid eventId)
+        {
+            var @event = await _eventService.GetAsync(eventId);
+            if(@event == null) return NotFound();
+
+            return Json(@event);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]CreateEvent command)
         {
