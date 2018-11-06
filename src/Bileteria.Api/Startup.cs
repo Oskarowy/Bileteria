@@ -37,6 +37,7 @@ namespace Bileteria.Api
             services.AddMvc()
             .AddJsonOptions(x => x.SerializerSettings.Formatting = Formatting.Indented)
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAuthorization(x => x.AddPolicy("HasAdminRole", p => p.RequireRole("admin")));
             services.AddScoped<IEventRepository, EventRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
@@ -67,6 +68,7 @@ namespace Bileteria.Api
             {
                 app.UseHsts();
             }
+            var jwtSettings = app.ApplicationServices.GetService<IOptions<JwtSettings>>();
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();

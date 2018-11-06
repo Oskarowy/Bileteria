@@ -4356,7 +4356,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AutoMapper": "7.0.1",
-          "Bileteria.Core": "1.0.0"
+          "Bileteria.Core": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.2"
         },
         "compile": {
           "bin/placeholder/Bileteria.Infrastructure.dll": {}
