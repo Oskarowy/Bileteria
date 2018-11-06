@@ -12,3 +12,8 @@
 /Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.AssemblyInfo.cs
 /Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.dll
 /Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.pdb
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Core.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Infrastructure.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Core.pdb
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Infrastructure.pdb
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.csproj.CopyComplete

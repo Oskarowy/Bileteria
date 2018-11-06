@@ -13,4 +13,9 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Bileteria.Core\Bileteria.Core.csproj" />
+    <ProjectReference Include="..\..\src\Bileteria.Infrastructure\Bileteria.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
