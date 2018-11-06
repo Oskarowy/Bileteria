@@ -42,6 +42,7 @@ namespace Bileteria.Api
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<ITicketService, TicketService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.AddSingleton<IJwtHandler, JwtHandler>();
             services.Configure<JwtSettings>(Configuration.GetSection("jwt"));
