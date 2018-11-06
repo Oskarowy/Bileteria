@@ -1,0 +1,14 @@
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Tests.deps.json
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Tests.runtimeconfig.json
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Tests.runtimeconfig.dev.json
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Tests.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/bin/Debug/netcoreapp2.1/Bileteria.Tests.pdb
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.csprojAssemblyReference.cache
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.csproj.CoreCompileInputs.cache
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.AssemblyInfoInputs.cache
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.AssemblyInfo.cs
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.dll
+/Users/oskarbialek/Programowanie/Bileteria/tests/Bileteria.Tests/obj/Debug/netcoreapp2.1/Bileteria.Tests.pdb
