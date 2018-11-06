@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bileteria.Api.Framework;
 using Bileteria.Core.Repositories;
 using Bileteria.Infrastructure.Mappers;
 using Bileteria.Infrastructure.Repositories;
@@ -77,6 +78,7 @@ namespace Bileteria.Api
             {
                 //app.ApplicationServices.GetService<IDataInitializer>().SeedAsync();
             }
+            app.UseErrorHandler();
             app.UseMvc();
         }
 
