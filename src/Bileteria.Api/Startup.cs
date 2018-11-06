@@ -45,7 +45,9 @@ namespace Bileteria.Api
             services.AddScoped<ITicketService, TicketService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.AddSingleton<IJwtHandler, JwtHandler>();
+            services.AddScoped<IDataInitializer, DataInitializer>();
             services.Configure<JwtSettings>(Configuration.GetSection("jwt"));
+            services.Configure<AppSettings>(Configuration.GetSection("app"));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -69,10 +71,15 @@ namespace Bileteria.Api
             {
                 app.UseHsts();
             }
-            var jwtSettings = app.ApplicationServices.GetService<IOptions<JwtSettings>>();
             app.UseAuthentication();
             app.UseHttpsRedirection();
+            if(app.ApplicationServices.GetService<IOptions<AppSettings>>().Value.SeedData)
+            {
+                //app.ApplicationServices.GetService<IDataInitializer>().SeedAsync();
+            }
             app.UseMvc();
         }
+
+        
     }
 }

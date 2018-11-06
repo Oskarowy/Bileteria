@@ -11,9 +11,9 @@ namespace Bileteria.Infrastructure.Repositories
     {
         private static readonly ISet<Event> _events = new HashSet<Event>
         {
-            new Event(Guid.NewGuid(), "Event 1", "Event 1 description",
+            new Event(Guid.NewGuid(), "Event 11", "Event 1 description",
                 DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(5)),
-            new Event(Guid.NewGuid(), "Event 2", "Event 2 description",
+            new Event(Guid.NewGuid(), "Event 22", "Event 2 description",
                 DateTime.UtcNow.AddHours(5), DateTime.UtcNow.AddHours(10))
         };
 
